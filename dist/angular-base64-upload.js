@@ -1,4 +1,4 @@
-/*! angular-base64-upload - v0.0.6 - 2015-03-28
+/*! angular-base64-upload - v0.0.7 - 2015-04-22
 * https://github.com/adonespitogo/angular-base64-upload
 * Copyright (c) Adones Pitogo <pitogo.adones@gmail.com> 2015; Licensed  */
 angular.module('naif.base64', [])
@@ -42,7 +42,7 @@ angular.module('naif.base64', [])
 
       // TODO: add handlers for other file types (e.g. video)
       function _assemble_data_uri(){
-        return "data:image/" + this.filetype + ";base64," + this.base64;
+        return "data:" + this.filetype + ";base64," + this.base64;
       }
     }
   };

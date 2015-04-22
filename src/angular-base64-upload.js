@@ -39,7 +39,7 @@ angular.module('naif.base64', [])
 
       // TODO: add handlers for other file types (e.g. video)
       function _assemble_data_uri(){
-        return "data:image/" + this.filetype + ";base64," + this.base64;
+        return "data:" + this.filetype + ";base64," + this.base64;
       }
     }
   };
